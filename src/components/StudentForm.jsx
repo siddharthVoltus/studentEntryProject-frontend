@@ -39,9 +39,14 @@ export default function StudentForm() {
   };
 
   const signOutRedirect = () => {
-    navigation("/student-portal");
-    auth.removeUser();
+    const clientId = "44atgttl25bga3nahgbvgf54kv";
+    const logoutUri =
+      "https://main.d1cn25y42jo13s.amplifyapp.com/student-portal";
+    const cognitoDomain =
+      "https://eu-north-1syo4lgo3t.auth.eu-north-1.amazoncognito.com";
+    window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
   };
+
   const signOut = () => signOutRedirect();
 
   return (
