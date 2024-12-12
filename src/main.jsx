@@ -13,7 +13,7 @@ const cognitoAuthConfig = {
   authority:
     "https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_sYO4lgO3T",
   client_id: "44atgttl25bga3nahgbvgf54kv",
-  redirect_uri: "http://localhost:5173/",
+  redirect_uri: "https://main.d1cn25y42jo13s.amplifyapp.com",
   response_type: "code",
   scope: "email openid phone",
 };

@@ -40,7 +40,7 @@ export default function StudentForm() {
 
   const signOutRedirect = () => {
     const clientId = "44atgttl25bga3nahgbvgf54kv";
-    const logoutUri = "http://localhost:5173/student-portal";
+    const logoutUri = "<logout uri>";
     const cognitoDomain =
       "https://eu-north-1syo4lgo3t.auth.eu-north-1.amazoncognito.com";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
